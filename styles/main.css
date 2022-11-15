@@ -1,0 +1,44 @@
+
+.container {
+	width: 1110px;	
+	margin: 0 auto;		
+}
+
+body > header .container {	
+	background: #FFFFFF;
+	box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+body > header .logo {
+	display: block;
+	background-image: url("/images/logo.png");
+	background-repeat: no-repeat;
+	background-position: 20px;
+	width: 224px;
+
+	/* 70 + 2 */
+	height: 70px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0);		
+}
+
+body > header .logo:hover {
+	border-bottom: 2px solid orange;
+}
+
+body > header .container {
+	display: flex;		
+}
+
+section.hero {
+	background-color: blue;
+
+}
+
+section.hero .container {
+	height: 513px;
+	background-color: rgba(173, 216, 230, 0.301);
+}
+
+section.hero .container h1 {
+	margin: 0px;
+}
