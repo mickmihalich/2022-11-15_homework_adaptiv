@@ -1,43 +1,63 @@
 
 .container {
-	width: 1110px;	
-	margin: 0 auto;
-	background: #ffff005e;		
+	width: 1800px;
+	margin: 0 auto;	
 }
 
-body > header .container {		
-	box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.08);
+body header .banner {
+	background-color: #00a046;
 }
 
-body > header .logo {
+.action {
 	display: block;
-	background-image: url("/images/logo.png");
+	background-image: url(/images/akcia_top.jpg);
+	background-position: center;	
+	background-repeat: no-repeat;	
+	height: 32px;	
+}
+
+body > header > nav {
+	background-color: #221f1f;	
+}
+
+a:hover {
+	filter: blur(3px);
+}
+
+.top_menu {	
+	display: flex;
+	justify-content: space-between;	
+	height: 72px;
+}
+
+.logo {
+	background-image: url(/images/logo_black_friday.svg);	
+	background-position: center;		
 	background-repeat: no-repeat;
-	background-position: 20px;
-	width: 224px;
-
-	/* 70 + 2 */
-	height: 70px;
-	border-bottom: 2px solid rgba(0, 0, 0, 0);		
+	width: 240px;
+	height: 72px;
 }
 
-body > header .logo:hover {
-	border-bottom: 2px solid orange;
+.war {
+	background-image: url(/images/war_banner.svg);	
+	background-position: center center;		
+	background-repeat: no-repeat;
+	width: 72px;
+	height: 72px;
 }
 
-body > header .container {
-	display: flex;		
+.navigation {
+	background-color: yellow;
+	min-height: 3rem;
+	width: calc(100%/12*6);
 }
-
-section.hero {
-	background-color: #0000ff5e;
-
+.hero {
+	background-color: gray;
+	min-height: 3rem;
+	width: calc(100%/12*6);
 }
-
-section.hero .container {
-	height: 513px;	
-}
-
-section.hero .container h1 {
-	margin: 0px;
+.items {
+	background-color: indigo;
+	min-height: 3rem;
+	calc(100%/12*6);
 }
