@@ -77,9 +77,11 @@ main.container {
 	width: calc(100%/10*2);
 	display: flex;
 	justify-items: center;
+	
+	align-items: center;
 
 	box-sizing: border-box;
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
 }
 
 .item_image {
@@ -88,6 +90,8 @@ main.container {
 	margin: 0 auto;
 	height: 250px;	
 	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
 }
 
 .item-1 {
@@ -102,6 +106,19 @@ main.container {
 
 
 
-@media screen and max-width {
+@media screen and (max-width: 1800) and (min-width: 1601) {
+	.container {width: 1600px;}	
 	
+}
+@media screen and (max-width: 1600) and (min-width: 1401) {
+	.container {width: 1400px;}	
+	body {background-color: aqua;}
+}
+@media screen and (max-width: 1400) and (min-width: 1201) {
+	.container {width: 1200px;}	
+	body {background-color: lime;}
+}
+@media screen and (max-width: 1200){
+	.container {width: 900px;}	
+	body {background-color: magenta;}
 }
