@@ -1,11 +1,11 @@
 
 .container {
 	width: 1110px;	
-	margin: 0 auto;		
+	margin: 0 auto;
+	background: #ffff005e;		
 }
 
-body > header .container {	
-	background: #FFFFFF;
+body > header .container {		
 	box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.08);
 }
 
@@ -30,13 +30,12 @@ body > header .container {
 }
 
 section.hero {
-	background-color: blue;
+	background-color: #0000ff5e;
 
 }
 
 section.hero .container {
-	height: 513px;
-	background-color: rgba(173, 216, 230, 0.301);
+	height: 513px;	
 }
 
 section.hero .container h1 {
