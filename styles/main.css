@@ -12,7 +12,7 @@ body header .banner {
 
 .action {
 	display: block;
-	background-image: url(/images/akcia_top.jpg);
+	background-image: url(../images/akcia_top.jpg);
 	background-position: center;	
 	background-repeat: no-repeat;	
 	height: 32px;	
@@ -33,7 +33,7 @@ a:hover {
 }
 
 .logo {
-	background-image: url(/images/logo_black_friday.svg);	
+	background-image: url(../images/logo_black_friday.svg);	
 	background-position: center;		
 	background-repeat: no-repeat;
 	width: 240px;
@@ -41,7 +41,7 @@ a:hover {
 }
 
 .war {
-	background-image: url(/images/war_banner.svg);	
+	background-image: url(../images/war_banner.svg);	
 	background-position: center center;		
 	background-repeat: no-repeat;
 	width: 72px;
@@ -95,7 +95,7 @@ main.container {
 }
 
 .item-1 {
-	background-image: url(/images/img_01.jpg);
+	background-image: url(../images/img_01.jpg);
 	background-position: center center;		
 	background-repeat: no-repeat;
 	background-size:contain;
