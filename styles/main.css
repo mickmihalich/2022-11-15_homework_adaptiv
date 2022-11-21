@@ -167,7 +167,7 @@ main.container {
 
 .vidio_frame {
 	width: 100%;
-	height: calc(100% - 1rem);
+	height: calc(100%);
 	min-height: 360px;
 }
 
