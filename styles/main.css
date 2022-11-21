@@ -158,6 +158,7 @@ main.container {
 	background-position: right top;
 	background-size: 30px 30px;
 	transition-duration: 2s;
+	background-size:contain; cover;
 }
 .cart:hover {
 	background-image: url(../images/cart4.svg);	
@@ -201,12 +202,15 @@ main.container {
 	.navigation {
 		height: 3rem;
 		width: 100%;
+		box-sizing: border-box;
 	}
 	.right_block {
 		width: 100%;
+		box-sizing: border-box;
 	}
 	.container {
-		width: 400px;
+		max-width: 400px;
 		padding: 0 15px;
+		box-sizing: border-box;
 	}		
 }
