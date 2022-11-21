@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
 body {
 	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 32px;
 }
 
 .container {
 	/*width: 1200px;*/
 	margin: 0 auto;
 	box-sizing: border-box;
-	padding: 0 35px;		
+	/*padding: 0 15px;		*/
 }
 
 body header .banner {
@@ -59,7 +64,12 @@ a:hover {
 main.container {
 	display: flex;
 	flex-wrap: wrap;	
-	background-color: #00a046;
+	/*background-color: #221f1f;	*/
+}
+
+.navigation, .hero, .items, {
+	padding: 15px;
+	box-sizing: border-box;
 }
 
 .navigation {
@@ -77,22 +87,28 @@ main.container {
 .hero {
 	background-color: gray;
 	min-height: 3rem;
-	width: calc(100%/10*10);
+	width: 100%;
+}
+.tovar {
+	background-color: limegreen;
+	width: 100%;
 }
 
 .items {
 	display: flex;		
 	flex-wrap: wrap;
-	width: calc(100%/10*10);
+	/*width: calc(100%/10*10);*/
 	background-color: limegreen;
 	align-content: flex-start;
+	justify-content: space-evenly;
+	width: 100%
 }
 
 .item {
-	background-color: indigo;
+	background-color: rgba(76, 0, 130, 0.726);
 	
 	/*width: calc(100%/10*2);*/
-	width: 2750px;
+	width: 140px;
 
 	display: flex;
 	justify-items: center;
@@ -102,16 +118,16 @@ main.container {
 	box-sizing: border-box;
 	/*background-color: #ffffff;*/
 
-	margin: 0.5rem;
+	margin: 3.5px;
 }
 
 .item_image {
 	display: block;
 	
 	margin: 0 auto;
-	height: 250px;	
+	height: 170px;	
 	width: 100%;
-	padding: 35px;
+	padding: 15px;
 	box-sizing: border-box;
 }
 
@@ -141,28 +157,56 @@ main.container {
 	background-repeat: no-repeat;
 	background-position: right top;
 	background-size: 30px 30px;
-	transition: background-image 1s;	
-	
+	transition-duration: 2s;
 }
 .cart:hover {
-	transition: background-image 2s;	
 	background-image: url(../images/cart4.svg);	
+	transition-duration: 2s;
 	
 }
 
+.vidio_frame {
+	width: 100%;
+	height: calc(100% - 1rem);
+	min-height: 360px;
+}
 
 
 @media (max-width: 1200){
 	
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1230px) {
 	.container {
-		width: 1800px;
+		width: 1200px;
 	}		
 }
-@media screen and (min-width: 1690px) and (max-width: 1999.98px) {
+@media screen and (min-width: 768px) and (max-width: 1229.98px) {
 	.container {
-		width: 1600px;
+		width: 738px;
+	}		
+	.navigation {
+		height: 3rem;
+		width: 100%;
+	}
+	.right_block {
+		width: 100%;
+	}
+
+	.item, .item_image {
+		/*width: auto;*/
+	}
+}
+@media screen and (max-width: 797.98px) {
+	.navigation {
+		height: 3rem;
+		width: 100%;
+	}
+	.right_block {
+		width: 100%;
+	}
+	.container {
+		width: 400px;
+		padding: 0 15px;
 	}		
 }
